@@ -19,6 +19,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     // for price range we need to use priceBetween that jpa will understand or else if we want to keep the name as it is then we have to
     // provide our own query explicitly
 
+    //TODO: try using named query on top of entity and use named query here
     @Query("FROM Book WHERE price BETWEEN :priceMin AND :priceMax")
     List<Book> findByPriceRange(double priceMin, double priceMax);
 
