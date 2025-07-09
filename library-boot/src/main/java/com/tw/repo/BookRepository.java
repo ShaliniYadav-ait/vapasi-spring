@@ -1,10 +1,8 @@
 package com.tw.repo;
 
-import com.tw.LibraryBootApplication;
 import com.tw.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
