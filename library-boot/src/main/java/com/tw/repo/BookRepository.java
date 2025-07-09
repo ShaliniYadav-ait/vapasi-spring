@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 // extending  JpaRepository<Book, Long>  takes care of standard CRUD operations
-public interface BookRepository extends JpaRepository<Book, Long> {
+public interface BookRepository extends JpaRepository<Book, Integer> {
 
     // for additional functionality we need to add methods
     List<Book> findByAuthor(String author);
