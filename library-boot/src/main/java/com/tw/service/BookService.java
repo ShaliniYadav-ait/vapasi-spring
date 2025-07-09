@@ -6,12 +6,14 @@ import java.util.List;
 
 public interface BookService {
 
+    // additional methods
     Book save(Book book);
     Book findByIsbn(int isbn);
     List<Book> findAll();
     boolean delete(int isbn);
-
 //    boolean delete(Book book);          ** TODO: check this
+
+    // methods form the Repository
     List<Book> findByAuthor(String author);
     List<Book> findByGenre(String genre);
     Book findByTitle(String title);
